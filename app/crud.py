@@ -1,5 +1,5 @@
-from sqlalchemy.orm import Session
 from sqlalchemy import select
+from sqlalchemy.orm import Session
 
 from app.models import Link
 from app.schemas import LinkCreate
