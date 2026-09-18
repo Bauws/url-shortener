@@ -1,10 +1,9 @@
-from fastapi import Depends, FastAPI, HTTPException
-from fastapi.responses import RedirectResponse
-from sqlalchemy.orm import Session
-
 from app.crud import create_link, generate_unique_short_code, get_link_by_short_code
 from app.database import get_db
 from app.schemas import LinkCreate, LinkResponse
+from fastapi import Depends, FastAPI, HTTPException
+from fastapi.responses import RedirectResponse
+from sqlalchemy.orm import Session
 
 app = FastAPI()
 
