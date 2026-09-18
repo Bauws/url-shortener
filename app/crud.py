@@ -1,8 +1,9 @@
+from sqlalchemy import select
+from sqlalchemy.orm import Session
+
 from app.models import Link
 from app.schemas import LinkCreate
 from app.utils import generate_short_code
-from sqlalchemy import select
-from sqlalchemy.orm import Session
 
 
 def create_link(db: Session, link_data: LinkCreate, short_code: str) -> Link:

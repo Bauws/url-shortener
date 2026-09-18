@@ -1,8 +1,9 @@
 from datetime import datetime
 
-from app.database import Base
 from sqlalchemy import String, func
 from sqlalchemy.orm import Mapped, mapped_column
+
+from app.database import Base
 
 
 class Link(Base):
